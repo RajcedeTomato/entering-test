@@ -1,3 +1,4 @@
+import './style.scss';
 
       function openSection(event,...names){
             closeAll();
@@ -6,7 +7,7 @@
             let sections=names;
             sections.map((section)=>{
                   if(section != "contact"){
-                  document.getElementById(section).style.display="initial";}
+                  document.getElementById(section).style.display="block";}
                   else {
                         document.getElementById(section).style.display="flex";  
                   }
@@ -36,7 +37,7 @@
             document.documentElement.scrollTop = 0;
       }
 
-      window.onscroll=function(){
+      window.onscroll=()=>{
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("topButton").style.display = "block";
     document.getElementById("topButton").style.transition = "display 1s";

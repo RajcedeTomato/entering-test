@@ -22,7 +22,7 @@ body{
 
 
 #pricelist,#performance,#schedule,#schedule-information,#contact{
-    display:none;
+    
     animation: fadeIn 1s;
 
 }
@@ -286,6 +286,8 @@ body{
 
 
     .content__performance {
+        
+
         h2{
             font-size:1.2em;
         }
