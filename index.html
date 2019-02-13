@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <link rel="icon" href="img/fav-icon.gif" type="image/gif" sizes="16x16">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title> MUDr. Radka Doubková</title>
+</head>
+
+<body>
+      <header class="container-fluid header">
+           
+            <div class="row jumbotron-container">
+
+                  <div class="text-center header__center">
+                        <div class="header-text__container">
+                              <img src="img/header-logo.png" alt="Logo společnosti" title="Logo">
+                              <h1>MUDr. Radka Doubková</h1>
+                              <p  class="header-text__container--closer">[praktický lékař]</p>
+                              <span>Pavlína Zahradníková</span>
+                              <p  class="header-text__container--closer">[asistent]</p>
+                        </div>
+                  </div>
+
+            </div>
+      
+
+            <div class="row header-photo-container">
+                  <div class="header-photo-aside header-photo-left">
+
+                  </div>
+                  <div class="header-photo-center">
+
+                  </div>
+                  <div class="header-photo-aside header-photo-right">
+
+                  </div>
+            </div>
+      </header>
+
+
+
+      <main class="container-fluid main-container">
+            <div class="row">
+                  <div class="text-container">
+
+                        <h2 class="text-red"><strong>Vítáme Vás na našich stránkách.</strong></h2>
+                        <p>
+                              Provozujeme ordinaci všeobecného praktického lékaře pro dospělé, která sídlí
+                              v nájemním prostoru areálu Plzeňského Prazdroje. Vjezd je umožněn hlavní bránou,
+                              parkování před vchodem.
+                        </p>
+                        <p>
+                              Nabízíme běžné služby praktického lékaře pro registrované pacienty a závodní péči
+                              pro smluvní podniky.
+                        </p>
+                        <p class="text-red">
+                             <strong> Smluvní pojišťovny: 111, 201, 205, 207, 211</strong>
+                        </p>
+                        <p>
+                              Upřednostňujeme objednávání pacientů, což minimalizuje dobu strávenou v čekárně
+                              a nám pomáhá lépe rozvrhnout naši práci.
+                        </p>
+                  </div>
+
+                  <div class="actually">
+                        <h2 class="actually__heading">Aktuálně</h2>
+                        <p>Ve dnech 17.-23. července jsme na dovolené. V případě akutních potíží
+                              kontaktujte, prosím, MUDr. Novákovou, Sirková 22, telefon: 377 265 298.
+                        </p>
+                  </div>
+
+
+
+
+                  <div class="nav buttons" id="navigation">
+                        <div class="col-md-4 padding-right"><a href="#navigation" 
+                              class="nav-link dropdown-toggle" onclick=openSection(event,"performance","pricelist")>Výkony a
+                                    ceník <i class="fas fa-angle-down"></i>
+                              </a></div>
+                        <div class="col-md-4 padding-right"><a href="#navigation" 
+                              class="nav-link dropdown-toggle" onclick=openSection(event,"schedule","schedule-information")>Ordinační doba
+                                    <i class="fas fa-angle-down"></i></a></div>
+                        <div class="col-md-4"><a href="#navigation" class="nav-link dropdown-toggle"
+                              onclick=openSection(event,"contact") >Kontaktní info
+                                    <i class="fas fa-angle-down"></i></a></div>
+                  </div>
+            </div>
+
+
+<!--  MAIN CONTENT -->
+
+<div class="row">
+            <div class="content-container">
+
+
+
+                    <div class="content__performance col-md-4 content" id="performance">
+                        <h2>Prováděné lékařské výkony</h2>
+                        <ul>
+                              <li>preventivní prohlídky u registrovaných pacientů hrazené z veř. pojištění
+                                    1x za 2 roky
+                              </li>
+                              <li>odběry krve, biologického materiálu</li>
+                              <li>akutní péče</li>
+                              <li>dispenzarizace pacientů s vysokým tlakem, poruchou metabolismu
+                                    tuků, nekomplikovanou cukrovkou
+                              </li>
+                              <li>očkování, aplikace injekcí</li>
+                              <li>předoperační vyšetření</li>
+                              <li>EKG</li>
+                              <li>Holter monitoring tlaku</li>
+                              <li>posouzení zdravotní způsobilosti k řízení mot. vozidel,
+                                    držení zbrojního průkazu, studiu, práci, sportu
+                              </li>
+                              <li>závodní preventivní péče</li>
+                        </ul>
+                  </div>
+                  <div class="content__pricelist col-md-8 content" id="pricelist">
+                        <h2> Ceník výkonů nehrazených z veřejného zdravotního pojištění</h2>
+                        <table class="table">
+                              <tbody>
+                                    <tr>
+                                          <td>Výpis ze zdravotní dokumentace</td>
+                                          <td class="text-right">100 Kč</td>
+                                    </tr>
+                                    <tr>
+                                          <td>
+                                                Posouzení zdravotní způsobilosti k řízení motorových vozidel:
+                                          </td>
+                                          <td></td>
+                                    </tr>
+                                    <tr class="table-borderless">
+                                          <td>
+                                                <ul>
+                                                      <li>pravidelná</li>
+                                                      <li>vstupní</li>
+                                                </ul>
+                                          </td>
+                                          <td class="text-right">
+
+                                                300 Kč<br>
+                                                500 Kč
+
+                                          </td>
+                                    </tr>
+                                    <tr>
+                                          <td>Posouzení zdravotní způsobilosti k práci (vstupní, pravidelná,
+                                                mimořádná, výstupní prohlídka, zdravotní průkaz, svářečský průkaz)
+                                          </td>
+                                          <td class="text-right">400 Kč</td>
+                                    </tr>
+                                    <tr>
+                                          <td>Posouzení zdravotní způsobilosti ke studiu</td>
+                                          <td class="text-right">200 Kč</td>
+                                    </tr>
+                                    <tr>
+                                          <td>Posouzení zdravotní způsobilosti k držení zbrojního průkazu</td>
+                                          <td class="text-right">500 Kč</td>
+                                    </tr>
+                                    <tr>
+                                          <td>Posouzení zdravotní způsobilosti ke sportu</td>
+                                          <td class="text-right">400 Kč</td>
+                                    </tr>
+                                    <tr>
+                                          <td>Vyšetření před lázeňskou léčbou - samoplátce</td>
+                                          <td class="text-right">500 Kč</td>
+                                    </tr>
+                                    <tr>
+                                          <td>Předoperační vyšetření před výkonem nehrazeným z veřejného
+                                                zdravotního pojištění
+                                          </td>
+                                          <td class="text-right">500 Kč</td>
+                                    </tr>
+                                    <tr>
+                                          <td>Zpráva pro komerční pojišťovnu</td>
+                                          <td class="text-right">200 Kč</td>
+                                    </tr>
+                                    <tr>
+                                          <td>Aplikace očkování nehrazeného z veřejného
+                                                zdravotního pojištění
+                                          </td>
+                                          <td class="text-right">100 Kč</td>
+                                    </tr>
+                                    <tr>
+                                          <td>Kopie lékařské zprávy či dokumentace
+                                                na vlastní žádost
+                                          </td>
+                                          <td class="text-right">2&nbsp;Kč/stranu</td>
+                                    </tr>
+                              </tbody>
+                        </table>
+
+                  </div>
+                 
+
+<div class="content__schedule col-md-4 content" id="schedule">
+<h2>Ordinační hodiny</h2>
+<table class="content__schedule--smalltable">
+      <tbody>
+            <tr><td>Pondělí</td><td>7.30-11.30</td><td>12.00-15.00</td></tr>
+            <tr><td>Úterý</td><td>7.30-11.30</td><td>14.00-18.00</td></tr>
+            <tr><td>Středa</td><td>7.30-11.30</td><td>12.00-15.00</td></tr>
+            <tr><td>Čtvrtek</td><td>7.30-11.30</td></tr>
+            <tr><td>Pátek</td><td>7.30-11.30</td></tr>
+      </tbody>
+</table>
+            </div>
+            <div class="content__scheduleinformation col-md-8 content" id="schedule-information">
+<h2>Informace k ordinační době</h2>
+<ul>
+      <li>Denně od 7.00 do 7.30 hodin odběry krve.</li>
+      <li>Od 8.00 do 11.00 je vhodné dostavit se s akutním onemocněním.</li>
+      <li>V odpoledních hodinách jsou většinou ošetřováni objednaní pacienti.</li>
+      <li>Z provozních důvodů příjem posledního pacienta do ordinace 1/4 hodiny před koncem ordinační doby.</li>
+</ul>
+                  </div>
+ 
+                
+            <div class="contact-container content" id="contact">
+                  <div class="content__contact col-md-4">
+                        <h2>Kontaktní osoby</h2>
+                        <p>
+                              <strong> MUDr. Radka Doubková</strong><br>
+                              [praktický lékař]
+                              <br>
+                              <strong> Pavlína Zahradníková</strong><br>
+                              [asistent]
+                        </p>
+                  </div>
+                  <div class="content__contact col-md-4">
+                        <h2>Sídlo / Identifikační číslo</h2>
+                        <p>U Prazdroje 64/7 <br>
+                              301 00 Plzeň</p>
+                        <p>
+                              IČ:03259919
+                        </p>
+                  </div>
+                  <div class="content__contact col-md-4">
+                        <h2>Kontaktní linky</h2>
+                        <p> <strong>telefon: </strong> 377 062 390 <br>
+                              <strong>e-mail:</strong> ordinace@radkadoubkova.cz
+                        </p>
+                        <p>
+                              E-mailovou adresu, prosím, nepoužívejte k naléhavé komunikaci.
+                        </p>
+                  </div>
+            </div>
+         
+             </div><!-- CONTENT CONTAINER -->
+            </div> <!-- ROW -->
+      </main>
+
+
+
+      <footer class="container-fluid footer">
+            <div class="row footer__container">
+                  
+                  <div class="footer__container--flex">
+                              <div class="footer__logo--center">
+                                          <img src="img/footer-logo.png" id="footer-logo" alt="Logo společnosti" title="Logo">
+                                    </div>
+                  <div class="footer__container--left">
+                        <p>
+                              <strong> MUDr. Radka Doubková</strong><br>
+                              [praktický lékař]
+                        <br>
+                              <strong> Pavlína Zahradníková</strong><br>
+                              [asistent]
+                        </p>
+                  </div>
+
+                  <div class="footer__container--right">
+                        <p>
+                              U Prazdroje 64/7, 301 00 Plzeň
+                        </p>
+                        <p>
+                              <strong>telefon: </strong> 377 062 390 <br>
+                              <strong>e-mail:</strong> ordinace@radkadoubkova.cz
+                        </p>
+                  </div>
+            </div>
+            </div>
+            <button onclick="scrollToTop()" id="topButton" title="Posunout nahoru">Nahoru</button>
+      </footer>
+
+<script src=".js/script/script.js"></script>
+</body>
+
+</html>
